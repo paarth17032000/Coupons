@@ -1,0 +1,127 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+main > div{
+    height: 100vh;
+}
+
+#first{
+    background-color: #4D248C;
+    min-height: 100vh;
+}
+
+#name_head{
+    color: #E89032;
+}
+
+#highlight{
+    background-color: #6343A4;
+    font-size: 18px;
+    margin-left: -40px;
+    border-radius: 0 25px 25px 0;
+    max-width: 700px;
+}
+
+#highlight_child{
+    color: #1BD025;
+    font-weight: 600;
+}
+
+#score{
+    font-size: 18px;
+}
+
+#button{
+    background-image: linear-gradient(180deg,#F40145,#DA0021);
+    padding: 14px 28px;
+    width: 35%;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+#second{
+    background-color: #400980;
+    min-height: 100vh;
+}
+
+#coup_element_1,#coup_element_2,#coup_element_3{
+    position: relative;
+}
+
+#coup_element_1::before,#coup_element_2::before,#coup_element_3::before{
+    content: '';
+    background-color: #400980;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#coup_element_1::after,#coup_element_2::after,#coup_element_3::after{
+    content: '';
+    background-color: #400980;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#coup_head_1{
+    width: 65px;  
+    background-color: #8FC4F9;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-radius: 10px 0 0 10px;
+}
+
+#coup_1{
+    width: 330px;
+    height: 180px;
+    border-radius: 0 10px 10px 0;
+    background-image: linear-gradient(180deg,#4D9FF6,#00EBD4);
+}
+
+#coup_head_2{
+    width: 65px;  
+    background-color: #FAC75E;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-radius: 10px 0 0 10px;
+}
+
+#coup_2{
+    width: 330px;
+    height: 180px;
+    border-radius: 0 10px 10px 0;
+    background-image: linear-gradient(180deg,#FFB193,#FF8193);
+}
+
+#coup_head_3{
+    width: 65px;  
+    background-color: #DA7ADC;
+    border-radius: 10px 0 0 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+
+#coup_3{
+    width: 330px;
+    height: 180px;
+    border-radius: 0 10px 10px 0;
+    background-image: linear-gradient(90deg,#D3B6FF,#A3BCFF);
+}
+
+@media screen and (max-width:772px){
+    #highlight{
+        max-width: 600px;
+    }
+}
