@@ -125,3 +125,50 @@ main > div{
         max-width: 600px;
     }
 }
+
+@media screen and (max-width:442px){
+    #highlight{
+        margin-left: -25px;
+        font-size: 16px;
+        max-width: 400px;
+    }
+    #coup_element_1::before,#coup_element_2::before,#coup_element_3::before{
+        content: '';
+        background-color: #400980;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #coup_element_1::after,#coup_element_2::after,#coup_element_3::after{
+        content: '';
+        background-color: #400980;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #coup_head_1,#coup_head_2,#coup_head_3{
+        width: 55px;  
+        border-radius: 10px 0 0 10px;
+    }
+    #coup_1,#coup_2,#coup_3{
+        width: 280px;
+        height: 150px;
+    }
+    #coup_1 > h1, #coup_2 > h1, #coup_3 > h1{
+        font-size: 30px;
+    }
+    #coup_1 > h5, #coup_2 > h5, #coup_3 > h5{
+        font-size: 18px;
+    }
+    #coup_1 > h6, #coup_2 > h6, #coup_3 > h6{
+        font-size: 14px;
+    }
+}
